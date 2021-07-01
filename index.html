@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">
+        Formulario de encuesta
+    </h1>
+    <p id="description">
+        Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.
+    </p>
+    <div class="center">
+        <form id="survey-form">
+
+            <div class="form">
+                <label id="name-label" for="name">Nombre</label><br><br>
+                <input type="text" id="name" placeholder="Ingresa tu nombre" required><br>
+            </div>
+            
+            <div class="form">
+                <label id="email-label" for="email">Email</label><br><br>
+                <input type="email" id="email"  placeholder="Ingresa tu email" required><br>
+            </div>
+
+            <div class="form">
+                <label id="number-label" for="number">Edad</label><br><br>
+                <input type="number" id="number" placeholder="Ingresa tu edad" min="15" max="60" required><br>
+            </div>
+
+            <div class="form">
+                <p>¿Qué opción describe mejor su función actual?</p>
+                    <select name="rol" id="dropdown">
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trabajador de tiempo completo">Trabajador de tiempo completo</option>
+                        <option value="Autodidacta">Autodidacta</option>
+                        <option value="Prefiero no decir">Prefiero no decir</option>
+                        <option value="Otro">Otro</option>
+                    </select><br>
+            </div>
+
+            <div class="form">
+                <p>¿Recomendarías freeCodeCamp a un amigo?</p>
+                <input type="radio" name="usuario" value="Definitivamente" checked>
+                <label>Definitivamente</label><br>
+                <input type="radio" name="usuario" value="Quizás" checked>
+                <label>Quizás</label><br>
+                <input type="radio" name="usuario" value="No estoy seguro" checked>
+                <label>No estoy seguro</label><br>
+            </div>
+
+            <div class="form">
+                <p>¿Cuál es tu característica favorita de freeCodeCamp?</p>
+                <select name="fav" id="dropdown">
+                    <option value="Retos">Retos</option>
+                    <option value="Proyectos">Proyectos</option>
+                    <option value="Comunidad">Comunidad</option>
+                    <option value="Open Source">Open Source</option>
+                </select><br>
+            </div>
+
+            <div class="form">
+                <p>¿Qué le gustaría ver mejorado? (Marque todo lo que corresponda)</p>
+                <input type="checkbox" id="op1" name="opcion" value="Proyectos de front-end">
+                <label>Proyectos de front-end</label><br>
+                <input type="checkbox" id="op2" name="opcion" value="Proyectos back-end">
+                <label>Proyectos back-end</label><br>
+                <input type="checkbox" id="op3" name="opcion" value="Visualización de datos">
+                <label>Visualización de datos</label><br>
+                <input type="checkbox" id="op4" name="opcion" value="Desafíos">
+                <label>Desafíos</label><br>
+                <input type="checkbox" id="op5" name="opcion" value="Comunidad de código abierto">
+                <label>Comunidad de código abierto</label><br>
+                <input type="checkbox" id="op6" name="opcion" value="Cursos adicionales">
+                <label>Cursos adicionales</label><br>
+            </div>
+
+            <div class="form">
+                <p>¿Algún comentario o sugerencia?</p>
+                <textarea name="comentario" id="com" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea><br>
+            </div>
+
+            <div class="form">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+            
+        </form>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
